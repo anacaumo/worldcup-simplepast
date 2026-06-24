@@ -182,7 +182,7 @@ let allQuestions = [
 
     { text: "against", score: 0, type: "Wrong", explanation: "'Against' é uma preposição. A resposta correta era 'played'." },
 
-    { text: "Croatia", score: 0, type: "Wrong", explanation: "'Croatia' é um país. A resposta correta era 'played'." },
+    { text: "Haiti", score: 0, type: "Wrong", explanation: "'Croatia' é um país. A resposta correta era 'played'." },
 
     { text: "played", score: 1, type: "Correct", explanation: "Correto! 'Played' é o verbo no Simple Past." }
   ]
@@ -216,15 +216,15 @@ let allQuestions = [
 
 
   {
-  text: "Qual frase contém um verbo REGULAR?",
+  text: "Qual frase contém um verbo IRREGULAR?",
   options: [
-    { text: "Germany won the World Cup.", score: 0, type: "Wrong", explanation: "'Won' é um verbo irregular. A resposta correta era 'Fans watched the final.'." },
+    { text: "Brazil played very well.", score: 0, type: "Wrong", explanation: "'Played' é um verbo regular. A resposta correta era 'Argentina won the final.'." },
 
-    { text: "Fans watched the final.", score: 1, type: "Correct", explanation: "Correto! 'Watched' é um verbo regular formado com -ed." },
+    { text: "Fans celebrated after the match.", score: 0, type: "Wrong", explanation: "'Celebrated' é um verbo regular. A resposta correta era 'Argentina won the final.'." },
 
-    { text: "People went to Qatar.", score: 0, type: "Wrong", explanation: "'Went' é um verbo irregular. A resposta correta era 'Fans watched the final.'." },
+    { text: "Argentina won the final.", score: 1, type: "Correct", explanation: "Correto! 'Won' é um verbo irregular." },
 
-    { text: "Many fans saw the match.", score: 0, type: "Wrong", explanation: "'Saw' é um verbo irregular. A resposta correta era 'Fans watched the final.'." }
+    { text: "The team trained every day.", score: 0, type: "Wrong", explanation: "'Trained' é um verbo regular. A resposta correta era 'Argentina won the final.'." }
   ]
 },
 
@@ -237,7 +237,7 @@ let allQuestions = [
 
     { text: "in 2014", score: 0, type: "Wrong", explanation: "Um ano passado indica passado. A resposta correta era 'next month'." },
 
-    { text: "next month", score: 1, type: "Correct", explanation: "Correto! 'Next month' significa mês que vem e indica futuro." }
+    { text: "today", score: 1, type: "Correct", explanation: "Correto! 'Today' significa hoje e indica presente." }
   ]
 },
 
@@ -254,6 +254,18 @@ let allQuestions = [
   ]
 },
 
+  {
+  text: "Observe a frase: 'Many people watched the match last week.' O que indica que a frase está no passado?",
+  options: [
+    { text: "só 'watched'", score: 0, type: "Wrong", explanation: "'Watched' ajuda a indicar passado, mas não é a resposta mais completa. A resposta correta era 'watched e last week'." },
+
+    { text: "só 'last week'", score: 0, type: "Wrong", explanation: "'Last week' ajuda a indicar passado, mas não é a resposta mais completa. A resposta correta era 'watched e last week'." },
+
+    { text: "'watched' e 'last week'", score: 1, type: "Correct", explanation: "Correto! Tanto o verbo quanto a expressão temporal mostram que a frase fala do passado." },
+
+    { text: "match", score: 0, type: "Wrong", explanation: "'Match' significa partida e não indica tempo. A resposta correta era 'watched e last week'." }
+  ]
+},
 
   {
   text: "Qual frase mostra um verbo regular no simple past E uma expressão de passado?",
