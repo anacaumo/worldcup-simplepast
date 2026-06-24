@@ -261,7 +261,7 @@ let allQuestions = [
 
     { text: "The team trained last week.", score: 0, type: "Wrong", explanation: "Essa frase está correta no passado. A resposta correta era 'The fans watch the match yesterday.'." },
 
-    { text: "Brazil won the tournament in 2002.", score: 0, type: "Wrong", explanation: "Essa frase está correta no passado. A resposta correta era 'The fans watch the match yesterday.'." }
+    { text: "Brazil won the World Cup in 2002.", score: 0, type: "Wrong", explanation: "Essa frase está correta no passado. A resposta correta era 'The fans watch the match yesterday.'." }
   ]
 },
 
