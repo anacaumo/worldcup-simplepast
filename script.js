@@ -95,9 +95,7 @@ currentRound = 1;
 
 let allQuestions = [
   {
-  [
-  {
-    text: "Qual destas expressões indica passado?",
+   text: "Qual destas expressões indica passado?",
     options: [
       {
         text: "tomorrow",
@@ -126,7 +124,7 @@ let allQuestions = [
     ]
   },
 
-  {
+   {
     text: "A expressão 'five years ago' significa:",
     options: [
       {
@@ -216,7 +214,7 @@ let allQuestions = [
     ]
   },
 
-  {
+ {
     text: "Qual frase fala sobre algo que aconteceu no passado?",
     options: [
       {
@@ -246,7 +244,7 @@ let allQuestions = [
     ]
   },
 
-  {
+   {
     text: "Na frase abaixo, qual palavra indica que a ação aconteceu no passado?\n\nMany fans celebrated yesterday.",
     options: [
       {
@@ -335,7 +333,7 @@ let allQuestions = [
       }
     ]
   },
-
+  
   {
     text: "Qual frase contém um verbo REGULAR?",
     options: [
@@ -366,7 +364,8 @@ let allQuestions = [
     ]
   },
 
-  {
+
+   {
     text: "Qual frase contém um verbo IRREGULAR?",
     options: [
       {
@@ -395,6 +394,7 @@ let allQuestions = [
       }
     ]
   },
+
 
   {
     text: "Qual destas expressões NÃO indica passado?",
@@ -426,6 +426,7 @@ let allQuestions = [
     ]
   },
 
+
   {
     text: "Observe a frase:\n\nFans celebrated yesterday.\n\nQuais são as duas pistas que mostram que ela está falando do passado?",
     options: [
@@ -456,7 +457,7 @@ let allQuestions = [
     ]
   },
 
-  {
+ {
     text: "Observe a frase:\n\nMany people watched the match last week.\n\nO que indica que a frase está no passado?",
     options: [
       {
@@ -485,6 +486,7 @@ let allQuestions = [
       }
     ]
   },
+
 
   {
     text: "Qual frase possui um verbo regular E uma expressão de passado?",
@@ -515,8 +517,8 @@ let allQuestions = [
       }
     ]
   },
-
-  {
+  
+    {
     text: "Observe a frase:\n\nArgentina won the World Cup in 2022.\n\nO verbo 'won' significa:",
     options: [
       {
@@ -545,8 +547,6 @@ let allQuestions = [
       }
     ]
   }
-]
-}
 ];
 
 
