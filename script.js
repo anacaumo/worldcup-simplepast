@@ -91,233 +91,209 @@ currentRound = 1;
 
   nextRound();
 }
+```javascript
 /* ========= QUESTIONS ========= */
 
 let allQuestions = [
-  {
-  text: "Your friend returned your hoodie with a stain. What do you say?",
+{
+  text: "Qual destas expressões indica passado?",
   options: [
-    { text: "What did you do to my hoodie?!", score: 0, type: "too direct", explanation: "Direct accusation ('you') with no softener or question. Sounds aggressive." },
+    { text: "tomorrow", score: 0, type: "Wrong", explanation: "'Tomorrow' significa amanhã, portanto indica futuro. A resposta correta era 'yesterday'." },
 
-    { text: "Hey, I think there’s a stain here—do you know what happened?", score: 1, type: "appropriate", explanation: "Uses softener ('I think') + indirect question. reduces blame and keeps it friendly." },
+    { text: "next year", score: 0, type: "Wrong", explanation: "'Next year' significa ano que vem, portanto indica futuro. A resposta correta era 'yesterday'." },
 
-    { text: "There’s a stain on this.", score: 0.5, type: "acceptable", explanation: "Clear statement, but no softener or question. More direct." },
+    { text: "yesterday", score: 1, type: "Correct", explanation: "Correto! 'Yesterday' significa ontem e é uma expressão usada para falar sobre o passado." },
 
-    { text: "It's fine.", score: 0, type: "too indirect", explanation: "Avoids the issue completely. Lacks request or clarification." }
+    { text: "soon", score: 0, type: "Wrong", explanation: "'Soon' significa em breve e normalmente se refere ao futuro. A resposta correta era 'yesterday'." }
   ]
 },
 
-  {
-  text: "You are late to meet your friend. What do you say?",
+{
+  text: "A expressão 'five years ago' significa:",
   options: [
-    { text: "I'm late.", score: 0, type: "too blunt", explanation: "States the problem, but no apology or repair strategy." },
+    { text: "daqui a cinco anos", score: 0, type: "Wrong", explanation: "Essa expressão indica futuro. 'Five years ago' significa algo que aconteceu no passado." },
 
-    { text: "Sorry I'm late! I'll be there in 10 minutes.", score: 1, type: "appropriate", explanation: "Uses apology ('sorry') + repair (time info). Socially appropriate." },
+    { text: "há cinco anos", score: 1, type: "Correct", explanation: "Correto! 'Five years ago' significa há cinco anos." },
 
-    { text: "Hey, I’m running a bit late.", score: 0.5, type: "acceptable", explanation: "Uses softener ('a bit'), but lacks full repair (no timing or solution)." },
+    { text: "durante cinco anos", score: 0, type: "Wrong", explanation: "Essa tradução não corresponde à expressão. 'Five years ago' significa há cinco anos." },
 
-    { text: "Relax.", score: 0, type: "dismissive", explanation: "Dismisses the other person’s perspective. No apology or responsibility." }
+    { text: "em cinco anos", score: 0, type: "Wrong", explanation: "Essa expressão indica futuro. A resposta correta era 'há cinco anos'." }
   ]
 },
 
-  {
-  text: "You want extra time for an assignment. What do you say?",
+{
+  text: "Qual destes verbos é REGULAR?",
   options: [
-    { text: "Give me more time.", score: 0, type: "too direct", explanation: "Direct command. Lacks modal or softener." },
+    { text: "won", score: 0, type: "Wrong", explanation: "'Won' é um verbo irregular. O correto era 'watched'." },
 
-    { text: "Could I possibly have an extra day to finish this?", score: 1, type: "appropriate", explanation: "Uses modal ('could') + softener ('possibly'). Polite and indirect request." },
+    { text: "went", score: 0, type: "Wrong", explanation: "'Went' é um verbo irregular. O correto era 'watched'." },
 
-    { text: "Is it okay if I turn it in late?", score: 0.5, type: "acceptable", explanation: "Polite question, but lacks additional mitigation (no softener or justification)." },
+    { text: "saw", score: 0, type: "Wrong", explanation: "'Saw' é um verbo irregular. O correto era 'watched'." },
 
-    { text: "I didn’t do it.", score: 0, type: "avoidance", explanation: "States problem, but no request or solution." }
+    { text: "watched", score: 1, type: "Correct", explanation: "Correto! 'Watched' é um verbo regular porque segue o padrão verbo + ed." }
   ]
 },
 
-  {
-  text: "You think your teacher graded you unfairly. What do you say?",
+{
+  text: "Qual destes verbos é IRREGULAR?",
   options: [
-    { text: "This grade is wrong.", score: 0, type: "too direct", explanation: "Direct statement with no softener. Threatens face." },
+    { text: "played", score: 0, type: "Wrong", explanation: "'Played' é um verbo regular. A resposta correta era 'won'." },
 
-    { text: "I was wondering if we could review my grade together.", score: 1, type: "appropriate", explanation: "Uses intro phrase ('I was wondering if') + collaborative tone. Reduces imposition." },
+    { text: "trained", score: 0, type: "Wrong", explanation: "'Trained' é um verbo regular. A resposta correta era 'won'." },
 
-    { text: "I think there might be a mistake.", score: 0.5, type: "acceptable", explanation: "Uses softeners ('I think', 'might'), but lacks collaboration." },
+    { text: "celebrated", score: 0, type: "Wrong", explanation: "'Celebrated' é um verbo regular. A resposta correta era 'won'." },
 
-    { text: "You made a mistake.", score: 0, type: "accusatory", explanation: "Direct accusation ('you'). Confrontational." }
+    { text: "won", score: 1, type: "Correct", explanation: "Correto! 'Won' é o passado de 'win' e é um verbo irregular." }
   ]
 },
 
-  {
-  text: "A server brought you the wrong drink. What do you say?",
+{
+  text: "Qual frase fala sobre algo que aconteceu no passado?",
   options: [
-    { text: "This is wrong.", score: 0, type: "too direct", explanation: "Blunt statement. Lacks softener or request." },
+    { text: "Brazil will win the World Cup.", score: 0, type: "Wrong", explanation: "A palavra 'will' indica futuro. A resposta correta era 'Brazil won the World Cup in 2002.'." },
 
-    { text: "Excuse me, I think I ordered a Sprite.", score: 1, type: "appropriate", explanation: "Uses softener ('I think') + indirect correction. Polite." },
+    { text: "Brazil is playing today.", score: 0, type: "Wrong", explanation: "A frase está falando de uma ação acontecendo agora. A resposta correta era 'Brazil won the World Cup in 2002.'." },
 
-    { text: "I asked for something else.", score: 0.5, type: "acceptable", explanation: "Clear, but lacks softener. Direct and blunt." },
+    { text: "Brazil won the World Cup in 2002.", score: 1, type: "Correct", explanation: "Correto! O verbo 'won' está no passado e o ano 2002 indica um evento passado." },
 
-    { text: "Whatever.", score: 0, type: "dismissive", explanation: "Dismissive response. No communication strategy." }
+    { text: "Brazil can win the World Cup.", score: 0, type: "Wrong", explanation: "A frase fala sobre possibilidade, não sobre um fato passado. A resposta correta era 'Brazil won the World Cup in 2002.'." }
   ]
 },
 
-  {
-  text: "You didn’t understand the homework. What do you say?",
+{
+  text: "Na frase 'Many fans celebrated yesterday.', qual palavra indica que a ação aconteceu no passado?",
   options: [
-    { text: "I don't get it.", score: 0, type: "too blunt", explanation: "Direct statement. No modal or softener." },
+    { text: "many", score: 0, type: "Wrong", explanation: "'Many' significa muitos. Não indica tempo. A resposta correta era 'yesterday'." },
 
-    { text: "Could you explain it again, please?", score: 1, type: "appropriate", explanation: "Uses modal ('could') + 'please'. Polite request." },
+    { text: "fans", score: 0, type: "Wrong", explanation: "'Fans' significa torcedores. Não indica tempo. A resposta correta era 'yesterday'." },
 
-    { text: "I’m not sure I understood. Could you go over it again?", score: 1, type: "appropriate", explanation: "Takes responsibility + uses modal ('could'). Strong face-saving strategy." },
+    { text: "celebrated", score: 0, type: "Wrong", explanation: "'Celebrated' está no passado, mas a pergunta pede a palavra que indica quando aconteceu. A resposta correta era 'yesterday'." },
 
-    { text: "This makes no sense.", score: 0, type: "negative", explanation: "Critical statement. Threatens listener’s face." }
+    { text: "yesterday", score: 1, type: "Correct", explanation: "Correto! 'Yesterday' significa ontem e mostra claramente que a ação aconteceu no passado." }
   ]
 },
 
-  {
-  text: "It is 11:30 PM and your neighbor is playing loud music. What do you say?",
+{
+  text: "Na frase 'Brazil played against Croatia.', qual palavra está no Simple Past?",
   options: [
-    { text: "Turn that music down right now!", score: 0, type: "too direct", explanation: "Direct command. No softener or modal." },
+    { text: "Brazil", score: 0, type: "Wrong", explanation: "'Brazil' é o sujeito da frase. A resposta correta era 'played'." },
 
-    { text: "Sorry to bother you, but it’s quite loud and I have an exam tomorrow. Would it be possible to lower it?", score: 1, type: "appropriate", explanation: "Uses apology + softener ('quite') + modal ('would it be possible'). Very polite." },
+    { text: "against", score: 0, type: "Wrong", explanation: "'Against' é uma preposição. A resposta correta era 'played'." },
 
-    { text: "It’s really loud.", score: 0.5, type: "acceptable", explanation: "States problem, but no request or softener." },
+    { text: "Croatia", score: 0, type: "Wrong", explanation: "'Croatia' é um país. A resposta correta era 'played'." },
 
-    { text: "You’re being inconsiderate.", score: 0, type: "too harsh", explanation: "Judgment ('you'). Escalates conflict." }
+    { text: "played", score: 1, type: "Correct", explanation: "Correto! 'Played' é o verbo no Simple Past." }
   ]
 },
 
-  {
-  text: "You are at a restaurant and your fork is dirty. What do you say?",
+{
+  text: "Na frase 'Germany won the World Cup in 2014.', como sabemos que ela fala do passado?",
   options: [
-    { text: "This is dirty. Bring me another one.", score: 0, type: "too direct", explanation: "Blunt statement + command. No softener or modal." },
+    { text: "Porque aparece o país Germany", score: 0, type: "Wrong", explanation: "O nome do país não indica tempo. A resposta correta era a alternativa que menciona 'won' e '2014'." },
 
-    { text: "Excuse me, there seems to be a slight problem with this fork. Could I get another one?", score: 1, type: "appropriate", explanation: "Uses 'there seems to be' + 'slight' + modal ('could'). Highly mitigated request." },
+    { text: "Porque aparece a palavra World Cup", score: 0, type: "Wrong", explanation: "World Cup é apenas o assunto da frase. A resposta correta era a alternativa que menciona 'won' e '2014'." },
 
-    { text: "I think this isn’t clean. Could I have another one?", score: 0.5, type: "appropriate", explanation: "Uses softener ('I think') + modal ('could')." },
+    { text: "Porque aparece o verbo won e o ano 2014", score: 1, type: "Correct", explanation: "Correto! Tanto o verbo 'won' quanto o ano '2014' mostram que a frase fala do passado." },
 
-    { text: "Um… this fork…", score: 0, type: "too indirect", explanation: "Too vague. No clear request." }
+    { text: "Porque aparece a palavra the", score: 0, type: "Wrong", explanation: "'The' é apenas um artigo. A resposta correta era a alternativa que menciona 'won' e '2014'." }
   ]
 },
 
-  {
-  text: "Your friend is 30 minutes late and hasn’t texted you. What do you say?",
+{
+  text: "Qual frase contém um verbo REGULAR?",
   options: [
-    { text: "You’re always late. It’s so annoying.", score: 0, type: "too harsh", explanation: "Uses 'always' + direct criticism. Escalates conflict." },
+    { text: "Germany won the World Cup.", score: 0, type: "Wrong", explanation: "'Won' é um verbo irregular. A resposta correta era 'Fans watched the final.'." },
 
-    { text: "Hey, I’ve been waiting for a bit—is everything okay?", score: 1, type: "appropriate", explanation: "Uses softener ('a bit') + indirect concern. Polite and non-accusatory." },
+    { text: "Fans watched the final.", score: 1, type: "Correct", explanation: "Correto! 'Watched' é um verbo regular formado com -ed." },
 
-    { text: "You’re late.", score: 0.5, type: "acceptable", explanation: "Clear, but no softener or question. More direct." },
+    { text: "People went to Qatar.", score: 0, type: "Wrong", explanation: "'Went' é um verbo irregular. A resposta correta era 'Fans watched the final.'." },
 
-    { text: "Whatever.", score: 0, type: "dismissive", explanation: "Avoids communication." }
+    { text: "Many fans saw the match.", score: 0, type: "Wrong", explanation: "'Saw' é um verbo irregular. A resposta correta era 'Fans watched the final.'." }
   ]
 },
 
-  {
-  text: "You want your teacher to check one of your answers. What do you say?",
+{
+  text: "Qual frase contém um verbo IRREGULAR?",
   options: [
-    { text: "Check this.", score: 0, type: "too direct", explanation: "Command. No modal or softener." },
+    { text: "Brazil played very well.", score: 0, type: "Wrong", explanation: "'Played' é um verbo regular. A resposta correta era 'Argentina won the final.'." },
 
-    { text: "I was wondering if you could double-check this answer for me?", score: 1, type: "appropriate", explanation: "Uses intro phrase + modal ('could'). Very polite request." },
+    { text: "Fans celebrated after the match.", score: 0, type: "Wrong", explanation: "'Celebrated' é um verbo regular. A resposta correta era 'Argentina won the final.'." },
 
-    { text: "Can you check this?", score: 0.5, type: "acceptable", explanation: "Uses modal ('can'), but less formal/softened." },
+    { text: "Argentina won the final.", score: 1, type: "Correct", explanation: "Correto! 'Won' é um verbo irregular." },
 
-    { text: "This is wrong, right?", score: 0, type: "problematic", explanation: "Pushes the teacher. Sounds leading or insecure." }
+    { text: "The team trained every day.", score: 0, type: "Wrong", explanation: "'Trained' é um verbo regular. A resposta correta era 'Argentina won the final.'." }
   ]
 },
 
-  {
-  text: "Your food arrives, but it is cold. What do you say?",
+{
+  text: "Qual destas expressões NÃO indica passado?",
   options: [
-    { text: "This is cold. Take it back.", score: 0, type: "too direct", explanation: "Blunt statement + command. No softening." },
+    { text: "yesterday", score: 0, type: "Wrong", explanation: "'Yesterday' significa ontem e indica passado. A resposta correta era 'next month'." },
 
-    { text: "Actually, I think this is a little cold. Could I get a new one?", score: 1, type: "appropriate", explanation: "Uses softener ('I think', 'a little') + modal ('could')." },
+    { text: "last year", score: 0, type: "Wrong", explanation: "'Last year' significa ano passado e indica passado. A resposta correta era 'next month'." },
 
-    { text: "This is kind of cold.", score: 0.5, type: "acceptable", explanation: "Uses softener ('kind of'), but no request." },
+    { text: "in 2014", score: 0, type: "Wrong", explanation: "Um ano passado indica passado. A resposta correta era 'next month'." },
 
-    { text: "Never mind.", score: 0, type: "avoidance", explanation: "Avoids the issue. No communication." }
+    { text: "next month", score: 1, type: "Correct", explanation: "Correto! 'Next month' significa mês que vem e indica futuro." }
   ]
 },
 
-  {
-  text: "A classmate keeps interrupting you while you're speaking. What do you say?",
+{
+  text: "Observe a frase: 'Fans celebrated yesterday.' Quais são as duas pistas que mostram que ela está falando do passado?",
   options: [
-    { text: "Stop interrupting me.", score: 0, type: "too direct", explanation: "Direct command. No softener." },
+    { text: "fans e yesterday", score: 0, type: "Wrong", explanation: "'Fans' não indica passado. A resposta correta era 'celebrated e yesterday'." },
 
-    { text: "Hey, could I finish what I was saying?", score: 1, type: "appropriate", explanation: "Uses modal ('could'). Assertive but not rude." },
+    { text: "celebrated e yesterday", score: 1, type: "Correct", explanation: "Correto! O verbo no passado e a expressão temporal mostram que a frase fala do passado." },
 
-    { text: "Let me talk.", score: 0.5, type: "acceptable", explanation: "Clear, but no softener. Very direct." },
+    { text: "fans e celebrated", score: 0, type: "Wrong", explanation: "'Fans' não indica passado. A resposta correta era 'celebrated e yesterday'." },
 
-    { text: "You never listen.", score: 0, type: "too harsh", explanation: "Uses 'never'. Overgeneralization and criticism." }
+    { text: "many e fans", score: 0, type: "Wrong", explanation: "Nenhuma dessas palavras indica passado. A resposta correta era 'celebrated e yesterday'." }
   ]
 },
 
-  {
-  text: "The classroom is very cold. What do you say to your teacher?",
+{
+  text: "Observe a frase: 'Many people watched the match last week.' O que indica que a frase está no passado?",
   options: [
-    { text: "It's cold. Turn on the heat.", score: 0, type: "too direct", explanation: "Command. No mitigation." },
+    { text: "watched", score: 0, type: "Wrong", explanation: "'Watched' ajuda a indicar passado, mas não é a resposta mais completa. A resposta correta era 'watched e last week'." },
 
-    { text: "I'm sorry, but the room is a bit cold. Could we turn on the heat?", score: 1, type: "appropriate", explanation: "Uses softener ('a bit') + modal ('could') + apology." },
+    { text: "last week", score: 0, type: "Wrong", explanation: "'Last week' ajuda a indicar passado, mas não é a resposta mais completa. A resposta correta era 'watched e last week'." },
 
-    { text: "It's kind of cold.", score: 0.5, type: "acceptable", explanation: "Uses softener, but no request." },
+    { text: "watched e last week", score: 1, type: "Correct", explanation: "Correto! Tanto o verbo quanto a expressão temporal mostram que a frase fala do passado." },
 
-    { text: "This room is freezing.", score: 0, type: "too strong", explanation: "Exaggeration + no request." }
-  ]
-}, 
-
-  {
-  text: "A classmate in your group is not contributing. What do you say?",
-  options: [
-    { text: "You’re not doing anything.", score: 0, type: "too direct", explanation: "Direct accusation. Confrontational." },
-
-    { text: "Hey, could we divide the work a bit differently so everyone has a part?", score: 1, type: "appropriate", explanation: "Uses modal ('could') + softener ('a bit'). Indirect and collaborative." },
-
-    { text: "We need more help.", score: 0.5, type: "acceptable", explanation: "Indirect, but not very specific." },
-
-    { text: "You never help.", score: 0, type: "too harsh", explanation: "Uses 'never'. Overgeneralization." }
-  ]
-}, 
-
-  {
-  text: "Your friend is talking loudly during a movie. What do you say?",
-  options: [
-    { text: "Be quiet.", score: 0, type: "too direct", explanation: "Command. No softener." },
-
-    { text: "Hey, could you lower your voice a bit?", score: 1, type: "appropriate", explanation: "Uses modal ('could') + softener ('a bit')." },
-
-    { text: "You’re very loud.", score: 0.5, type: "acceptable", explanation: "Clear, but no softener or request." },
-
-    { text: "You’re ruining this.", score: 0, type: "too harsh", explanation: "Blames the person. Escalates." }
+    { text: "match", score: 0, type: "Wrong", explanation: "'Match' significa partida e não indica tempo. A resposta correta era 'watched e last week'." }
   ]
 },
 
-  {
-  text: "You need to email your teacher because your assignment is late. What do you say?",
+{
+  text: "Qual frase possui um verbo regular E uma expressão de passado?",
   options: [
-    { text: "I'm submitting it late.", score: 0, type: "too blunt", explanation: "No apology or mitigation." },
+    { text: "Fans celebrated yesterday.", score: 1, type: "Correct", explanation: "Correto! 'Celebrated' é um verbo regular e 'yesterday' é uma expressão de passado." },
 
-    { text: "I'm sorry for the delay. I was wondering if I could still submit the assignment.", score: 1, type: "appropriate", explanation: "Uses apology + intro phrase + modal. Very appropriate." },
+    { text: "Fans celebrate every day.", score: 0, type: "Wrong", explanation: "'Celebrate' está no presente e não há expressão de passado. A resposta correta era 'Fans celebrated yesterday.'." },
 
-    { text: "Can I still send it?", score: 0.5, type: "acceptable", explanation: "Uses modal ('can'), but lacks apology and formality." },
+    { text: "Fans will celebrate tomorrow.", score: 0, type: "Wrong", explanation: "A frase está no futuro. A resposta correta era 'Fans celebrated yesterday.'." },
 
-    { text: "This deadline was unfair.", score: 0, type: "confrontational", explanation: "Criticizes authority. Inappropriate tone." }
+    { text: "Fans are celebrating now.", score: 0, type: "Wrong", explanation: "A frase fala de uma ação acontecendo agora. A resposta correta era 'Fans celebrated yesterday.'." }
   ]
 },
 
-  {
-  text: "You receive a bill that seems too high. What do you say?",
+{
+  text: "Observe a frase: 'Argentina won the World Cup in 2022.' O verbo 'won' significa:",
   options: [
-    { text: "This is wrong.", score: 0, type: "too direct", explanation: "Blunt statement. No softener." },
+    { text: "ganhará", score: 0, type: "Wrong", explanation: "'Ganhará' está no futuro. A resposta correta era 'ganhou'." },
 
-    { text: "Excuse me, I think there might be a mistake on the bill.", score: 1, type: "appropriate", explanation: "Uses softeners ('I think', 'might'). Polite correction." },
+    { text: "ganha", score: 0, type: "Wrong", explanation: "'Ganha' está no presente. A resposta correta era 'ganhou'." },
 
-    { text: "This seems high.", score: 0.5, type: "acceptable", explanation: "Uses softener ('seems'), but no clear request." },
+    { text: "ganhou", score: 1, type: "Correct", explanation: "Correto! 'Won' é o passado do verbo 'win' e significa 'ganhou'." },
 
-    { text: "You overcharged me.", score: 0, type: "accusatory", explanation: "Direct accusation. Confrontational." }
+    { text: "ganhando", score: 0, type: "Wrong", explanation: "'Ganhando' indica uma ação em andamento. A resposta correta era 'ganhou'." }
   ]
 }
 ];
 
-
 /* ========= GAME ========= */
+```
+
 
 let remainingQuestions = allQuestions.slice();
 let currentQuestion = null;
