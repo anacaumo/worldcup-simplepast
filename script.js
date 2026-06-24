@@ -245,7 +245,7 @@ let allQuestions = [
   },
 
    {
-    text: "Na frase abaixo, qual palavra indica que a ação aconteceu no passado?\n\nMany fans celebrated yesterday.",
+    text: "Na frase abaixo, qual palavra indica quando a ação aconteceu?\n\nMany fans celebrated yesterday.",
     options: [
       {
         text: "many",
@@ -263,13 +263,13 @@ let allQuestions = [
         text: "celebrated",
         score: 0,
         type: "Wrong",
-        explanation: "CELEBRATED também indica passado, mas a pergunta pede a palavra que indica quando a ação aconteceu."
+        explanation: "CELEBRATED também indica passado, já que está no simple past, mas a pergunta pede a palavra que indica QUANDO a ação aconteceu."
       },
       {
         text: "yesterday",
         score: 1,
         type: "Correct",
-        explanation: "Exactly! YESTERDAY é uma expressão temporal que mostra claramente que a ação aconteceu no passado."
+        explanation: "Exactly! YESTERDAY é uma expressão temporal que mostra claramente quando a ação aconteceu."
       }
     ]
   },
