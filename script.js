@@ -266,7 +266,7 @@ let allQuestions = [
 },
 
   {
-  text: "Qual destas frases possui um verbo irregular E uma expressão de passado?",
+  text: "Qual destas frases apresenta um verbo irregular E uma expressão de passado?",
   options: [
     { text: "The team won last year.", score: 1, type: "Correct", explanation: "Correto! 'Won' é um verbo irregular e 'last year' é uma expressão de passado." },
 
