@@ -134,6 +134,31 @@ let allQuestions = [
   ]
 },
 
+  {
+  text: "Qual destas expressões significa 'há dois dias'?",
+  options: [
+    { text: "in two days", score: 0, type: "Wrong", explanation: "'In two days' significa daqui a dois dias. A resposta correta era 'two days ago'." },
+
+    { text: "two days ago", score: 1, type: "Correct", explanation: "Correto! 'Two days ago' significa há dois dias." },
+
+    { text: "for two days", score: 0, type: "Wrong", explanation: "'For two days' significa por dois dias. A resposta correta era 'two days ago'." },
+
+    { text: "the next two days", score: 0, type: "Wrong", explanation: "Essa expressão se refere ao futuro. A resposta correta era 'two days ago'." }
+  ]
+},
+
+  {
+  text: "Qual destes verbos é o passado de 'play'?",
+  options: [
+    { text: "plays", score: 0, type: "Wrong", explanation: "'Plays' está no presente. A resposta correta era 'played'." },
+
+    { text: "playing", score: 0, type: "Wrong", explanation: "'Playing' indica uma ação em andamento. A resposta correta era 'played'." },
+
+    { text: "played", score: 1, type: "Correct", explanation: "Correto! 'Played' é o Simple Past do verbo 'play'." },
+
+    { text: "playd", score: 0, type: "Wrong", explanation: "Está faltando uma letra. A resposta correta era 'played'." }
+  ]
+},
 
   {
   text: "Qual destes verbos é IRREGULAR?",
@@ -176,6 +201,32 @@ let allQuestions = [
 },
 
   {
+  text: "Qual destes verbos é o passado de 'win'?",
+  options: [
+    { text: "winned", score: 0, type: "Wrong", explanation: "'Winned' não existe em inglês. A resposta correta era 'won'." },
+
+    { text: "won", score: 1, type: "Correct", explanation: "Correto! 'Won' é o passado irregular do verbo 'win'." },
+
+    { text: "wins", score: 0, type: "Wrong", explanation: "'Wins' está no presente. A resposta correta era 'won'." },
+
+    { text: "winning", score: 0, type: "Wrong", explanation: "'Winning' indica uma ação em andamento. A resposta correta era 'won'." }
+  ]
+},
+
+  {
+  text: "Na frase 'The fans watched the match last night.', quais são as duas pistas que indicam que a frase está no passado?",
+  options: [
+    { text: "fans e match", score: 0, type: "Wrong", explanation: "Essas palavras não indicam passado. A resposta correta era 'watched e last night'." },
+
+    { text: "watched e last night", score: 1, type: "Correct", explanation: "Correto! O verbo no passado e a expressão temporal mostram que a ação aconteceu no passado." },
+
+    { text: "fans e watched", score: 0, type: "Wrong", explanation: "'Fans' não indica passado. A resposta correta era 'watched e last night'." },
+
+    { text: "the e match", score: 0, type: "Wrong", explanation: "Essas palavras não indicam tempo. A resposta correta era 'watched e last night'." }
+  ]
+},
+
+  {
   text: "Na frase 'Brazil played against Haiti.', qual palavra está no Simple Past?",
   options: [
     { text: "Brazil", score: 0, type: "Wrong", explanation: "'Brazil' é o sujeito da frase. A resposta correta era 'played'." },
@@ -198,6 +249,32 @@ let allQuestions = [
     { text: "Porque aparece o verbo 'won' e o ano 2014", score: 1, type: "Correct", explanation: "Correto! Tanto o verbo 'won' quanto o ano '2014' mostram que a frase fala do passado." },
 
     { text: "Porque aparece a palavra 'the'", score: 0, type: "Wrong", explanation: "'The' é apenas um artigo. A resposta correta era a alternativa que menciona 'won' e '2014'." }
+  ]
+},
+
+  {
+  text: "Qual destas frases está INCORRETA no passado?",
+  options: [
+    { text: "The team won last year.", score: 0, type: "Wrong", explanation: "Essa frase está correta no passado. A resposta correta era 'The fans watch the match yesterday.'." },
+
+    { text: "The fans watch the match yesterday.", score: 1, type: "Correct", explanation: "Correto! A frase está incorreta porque 'watch' deveria estar no passado: 'watched'." },
+
+    { text: "The team trained last week.", score: 0, type: "Wrong", explanation: "Essa frase está correta no passado. A resposta correta era 'The fans watch the match yesterday.'." },
+
+    { text: "Brazil won the tournament in 2002.", score: 0, type: "Wrong", explanation: "Essa frase está correta no passado. A resposta correta era 'The fans watch the match yesterday.'." }
+  ]
+},
+
+  {
+  text: "Qual destas frases possui um verbo irregular E uma expressão de passado?",
+  options: [
+    { text: "The team won last year.", score: 1, type: "Correct", explanation: "Correto! 'Won' é um verbo irregular e 'last year' é uma expressão de passado." },
+
+    { text: "The team wins every year.", score: 0, type: "Wrong", explanation: "O verbo está no presente. A resposta correta era 'The team won last year.'." },
+
+    { text: "The team will win next year.", score: 0, type: "Wrong", explanation: "A frase está no futuro. A resposta correta era 'The team won last year.'." },
+
+    { text: "The team is winning now.", score: 0, type: "Wrong", explanation: "A frase fala de uma ação em andamento. A resposta correta era 'The team won last year.'." }
   ]
 },
 
