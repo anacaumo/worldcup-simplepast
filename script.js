@@ -295,13 +295,13 @@ let allQuestions = [
   {
   text: "Qual frase contém um verbo IRREGULAR?",
   options: [
-    { text: "Brazil played very well.", score: 0, type: "Wrong", explanation: "'Played' é um verbo regular. A resposta correta era 'Argentina won the final.'." },
+    { text: "Brazil played very well.", score: 0, type: "Wrong", explanation: "'Played' é um verbo regular. A resposta correta era 'Spain won the World Cup in 2010.'." },
 
-    { text: "Fans celebrated after the match.", score: 0, type: "Wrong", explanation: "'Celebrated' é um verbo regular. A resposta correta era 'Argentina won the final.'." },
+    { text: "Fans celebrated after the match.", score: 0, type: "Wrong", explanation: "'Celebrated' é um verbo regular. A resposta correta era 'Spain won the World Cup in 2010.'." },
 
-    { text: "Argentina won the final.", score: 1, type: "Correct", explanation: "Correto! 'Won' é um verbo irregular." },
+    { text: "Spain won the World Cup in 2010.", score: 1, type: "Correct", explanation: "Correto! 'Won' é um verbo irregular." },
 
-    { text: "The team trained every day.", score: 0, type: "Wrong", explanation: "'Trained' é um verbo regular. A resposta correta era 'Argentina won the final.'." }
+    { text: "The team trained every day.", score: 0, type: "Wrong", explanation: "'Trained' é um verbo regular. A resposta correta era 'Spain won the World Cup in 2010.'." }
   ]
 },
 
@@ -358,7 +358,7 @@ let allQuestions = [
 },
 
  {
-  text: "Observe a frase: 'Argentina won the World Cup in 2022.' O verbo 'won' significa:",
+  text: "Observe a frase: 'Germany won the World Cup in 2014.' O verbo 'won' significa:",
   options: [
     { text: "participou", score: 0, type: "Wrong", explanation: "'Participou' está no passado, mas não é o significado correto. A resposta correta era 'ganhou'." },
 
