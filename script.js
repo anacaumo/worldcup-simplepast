@@ -99,11 +99,11 @@ let allQuestions = [
   options: [
     { text: "tomorrow", score: 0, type: "Wrong", explanation: "'Tomorrow' significa amanhã, portanto indica futuro. A resposta correta era 'yesterday'." },
 
-    { text: "next year", score: 0, type: "Wrong", explanation: "'Next year' significa ano que vem, portanto indica futuro. A resposta correta era 'yesterday'." },
+    { text: "this year", score: 0, type: "Wrong", explanation: "'This year' significa 'esse ano' e se refere ao presente. A resposta correta era 'yesterday'." },
 
     { text: "yesterday", score: 1, type: "Correct", explanation: "Correto! 'Yesterday' significa ontem e é uma expressão usada para falar sobre o passado." },
 
-    { text: "soon", score: 0, type: "Wrong", explanation: "'Soon' significa em breve e normalmente se refere ao futuro. A resposta correta era 'yesterday'." }
+    { text: "today", score: 0, type: "Wrong", explanation: "'Today' significa 'hoje' e se refere ao presente. A resposta correta era 'yesterday'." }
   ]
 },
 
