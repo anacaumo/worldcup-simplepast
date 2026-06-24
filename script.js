@@ -48,7 +48,7 @@ function generateNameInputs() {
     input.maxLength = 12;
 
     input.className = "team-input";
-
+fd
     container.appendChild(input);
   }
 }
@@ -462,14 +462,14 @@ let allQuestions = [
     options: [
       {
         text: "watched",
-        score: 0,
-        type: "Wrong",
+        score: 0.5,
+        type: "Incomplete",
         explanation: "WATCHED indica passado, mas não é a única pista presente na frase."
       },
       {
         text: "last week",
-        score: 0,
-        type: "Wrong",
+        score: 0.5,
+        type: "Incomplete",
         explanation: "LAST WEEK indica passado, mas não é a única pista presente na frase."
       },
       {
