@@ -48,7 +48,6 @@ function generateNameInputs() {
     input.maxLength = 12;
 
     input.className = "team-input";
-fd
     container.appendChild(input);
   }
 }
@@ -769,6 +768,10 @@ function updateRoundOptions() {
   let totalQuestions = allQuestions.length;
 
   let maxRounds = Math.floor(totalQuestions / teamCount);
+
+  if (maxRounds < 1) {
+    maxRounds = 1;
+  }
 
   let select = document.getElementById("roundCount");
   select.innerHTML = "";
