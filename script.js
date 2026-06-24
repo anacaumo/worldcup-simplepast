@@ -163,7 +163,7 @@ let allQuestions = [
 },
 
  {
-  text: "Na frase 'Many fans celebrated yesterday.', qual palavra indica que a ação aconteceu no passado?",
+  text: "Na frase 'Many fans celebrated yesterday.', o que nos diz QUANDO a ação aconteceu?",
   options: [
     { text: "many", score: 0, type: "Wrong", explanation: "'Many' significa muitos. Não indica tempo. A resposta correta era 'yesterday'." },
 
@@ -176,7 +176,7 @@ let allQuestions = [
 },
 
   {
-  text: "Na frase 'Brazil played against Croatia.', qual palavra está no Simple Past?",
+  text: "Na frase 'Brazil played against Haiti.', qual palavra está no Simple Past?",
   options: [
     { text: "Brazil", score: 0, type: "Wrong", explanation: "'Brazil' é o sujeito da frase. A resposta correta era 'played'." },
 
@@ -193,11 +193,11 @@ let allQuestions = [
   options: [
     { text: "Porque aparece o país Germany", score: 0, type: "Wrong", explanation: "O nome do país não indica tempo. A resposta correta era a alternativa que menciona 'won' e '2014'." },
 
-    { text: "Porque aparece a palavra World Cup", score: 0, type: "Wrong", explanation: "World Cup é apenas o assunto da frase. A resposta correta era a alternativa que menciona 'won' e '2014'." },
+    { text: "Porque aparece o evento World Cup", score: 0, type: "Wrong", explanation: "World Cup é apenas o assunto da frase. A resposta correta era a alternativa que menciona 'won' e '2014'." },
 
-    { text: "Porque aparece o verbo won e o ano 2014", score: 1, type: "Correct", explanation: "Correto! Tanto o verbo 'won' quanto o ano '2014' mostram que a frase fala do passado." },
+    { text: "Porque aparece o verbo 'won' e o ano 2014", score: 1, type: "Correct", explanation: "Correto! Tanto o verbo 'won' quanto o ano '2014' mostram que a frase fala do passado." },
 
-    { text: "Porque aparece a palavra the", score: 0, type: "Wrong", explanation: "'The' é apenas um artigo. A resposta correta era a alternativa que menciona 'won' e '2014'." }
+    { text: "Porque aparece a palavra 'the'", score: 0, type: "Wrong", explanation: "'The' é apenas um artigo. A resposta correta era a alternativa que menciona 'won' e '2014'." }
   ]
 },
 
@@ -254,38 +254,26 @@ let allQuestions = [
   ]
 },
 
-  {
-  text: "Observe a frase: 'Fans celebrated yesterday.' Quais são as duas pistas que mostram que ela está falando do passado?",
-  options: [
-    { text: "fans e yesterday", score: 0, type: "Wrong", explanation: "'Fans' não indica passado. A resposta correta era 'celebrated e yesterday'." },
-
-    { text: "celebrated e yesterday", score: 1, type: "Correct", explanation: "Correto! O verbo no passado e a expressão temporal mostram que a frase fala do passado." },
-
-    { text: "fans e celebrated", score: 0, type: "Wrong", explanation: "'Fans' não indica passado. A resposta correta era 'celebrated e yesterday'." },
-
-    { text: "many e fans", score: 0, type: "Wrong", explanation: "Nenhuma dessas palavras indica passado. A resposta correta era 'celebrated e yesterday'." }
-  ]
-},
 
   {
-  text: "Qual frase possui um verbo regular E uma expressão de passado?",
+  text: "Qual frase mostra um verbo regular no simple past E uma expressão de passado?",
   options: [
     { text: "Fans celebrated yesterday.", score: 1, type: "Correct", explanation: "Correto! 'Celebrated' é um verbo regular e 'yesterday' é uma expressão de passado." },
 
-    { text: "Fans celebrate every day.", score: 0, type: "Wrong", explanation: "'Celebrate' está no presente e não há expressão de passado. A resposta correta era 'Fans celebrated yesterday.'." },
+    { text: "They played soccer.", score: 0, type: "Wrong", explanation: "'Played' está no simple past, mas não temos uma expressão de passado. A resposta correta era 'Fans celebrated yesterday.'." },
 
-    { text: "Fans will celebrate tomorrow.", score: 0, type: "Wrong", explanation: "A frase está no futuro. A resposta correta era 'Fans celebrated yesterday.'." },
+    { text: "They are watching the game.", score: 0, type: "Wrong", explanation: "A frase fala de uma ação acontecendo agora. A resposta correta era 'Fans celebrated yesterday.'." },
 
-    { text: "Fans are celebrating now.", score: 0, type: "Wrong", explanation: "A frase fala de uma ação acontecendo agora. A resposta correta era 'Fans celebrated yesterday.'." }
+    { text: "Fans are celebrating now.", score: 0, type: "Wrong", explanation: "A frase fala de uma ação acontecendo agora. 'Now' é uma expressão de tempo, mas não de tempo passado. A resposta correta era 'Fans celebrated yesterday.'." }
   ]
 },
 
  {
   text: "Observe a frase: 'Argentina won the World Cup in 2022.' O verbo 'won' significa:",
   options: [
-    { text: "ganhará", score: 0, type: "Wrong", explanation: "'Ganhará' está no futuro. A resposta correta era 'ganhou'." },
+    { text: "participou", score: 0, type: "Wrong", explanation: "'Participou' está no passado, mas não é o significado correto. A resposta correta era 'ganhou'." },
 
-    { text: "ganha", score: 0, type: "Wrong", explanation: "'Ganha' está no presente. A resposta correta era 'ganhou'." },
+    { text: "jogou", score: 0, type: "Wrong", explanation: "'Jogou' está no passado, mas não é o significado correto. A resposta correta era 'ganhou'." },
 
     { text: "ganhou", score: 1, type: "Correct", explanation: "Correto! 'Won' é o passado do verbo 'win' e significa 'ganhou'." },
 
