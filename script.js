@@ -281,7 +281,7 @@ let allQuestions = [
  {
   text: "Qual frase contém um verbo REGULAR?",
   options: [
-    { text: "Germany won the World Cup.", score: 0, type: "Wrong", explanation: "'Won' é um verbo irregular. A resposta correta era 'Fans watched the final.'." },
+    { text: "Uruguay won the first World Cup.", score: 0, type: "Wrong", explanation: "'Won' é um verbo irregular. A resposta correta era 'Fans watched the final.'." },
 
     { text: "Fans watched the final.", score: 1, type: "Correct", explanation: "Correto! 'Watched' é um verbo regular formado com -ed." },
 
@@ -358,7 +358,7 @@ let allQuestions = [
 },
 
  {
-  text: "Observe a frase: 'Germany won the World Cup in 2014.' O verbo 'won' significa:",
+  text: "Observe a frase: 'France won the World Cup in 2018.' O verbo 'won' significa:",
   options: [
     { text: "participou", score: 0, type: "Wrong", explanation: "'Participou' está no passado, mas não é o significado correto. A resposta correta era 'ganhou'." },
 
